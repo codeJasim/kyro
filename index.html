@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zayn & Layla — Wedding Invitation</title>
+  
+  <!-- Meta tags for SEO & Sharing -->
+  <meta name="description" content="You are cordially invited to celebrate the union of Zayn & Layla. Save the Date: October 17, 2026. RSVP online.">
+  <meta property="og:title" content="Zayn & Layla — Wedding Invitation">
+  <meta property="og:description" content="Join us in celebrating our Nikkah & Valima. Find all schedule details, venue maps, and RSVP online.">
+  <meta property="og:image" content="assets/hero.png">
+  
+  <!-- Fonts: Amiri (Arabic/Serif), Cinzel (Elegant headers), Montserrat & Great Vibes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Music Widget -->
+  <div class="music-widget" id="musicWidget">
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle Background Music">
+      <i class="fas fa-music"></i>
+      <span class="music-pulse"></span>
+    </button>
+    <audio id="bgMusic" loop>
+      <!-- Soft ambient spiritual melody -->
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-bg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.6)), url('assets/hero.png');"></div>
+    <div class="hero-content">
+      <div class="bismillah-header fade-in">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+      <p class="bismillah-translation fade-in">In the name of Allah, the Most Gracious, the Most Merciful</p>
+      
+      <p class="hero-subtitle fade-in">WE CORDIALLY INVITE YOU TO CELEBRATE THE NIKKAH OF</p>
+      <h1 class="hero-title fade-in">Zayn & Layla</h1>
+      <p class="hero-date fade-in">10 . 17 . 2026</p>
+      <p class="hero-location fade-in">Tuscany, Italy</p>
+      
+      <!-- Countdown Container -->
+      <div class="countdown-container fade-in" id="countdown">
+        <div class="countdown-box">
+          <span class="number" id="days">00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="countdown-box">
+          <span class="number" id="hours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="countdown-box">
+          <span class="number" id="minutes">00</span>
+          <span class="label">Mins</span>
+        </div>
+        <div class="countdown-box">
+          <span class="number" id="seconds">00</span>
+          <span class="label">Secs</span>
+        </div>
+      </div>
+      
+      <a href="#rsvp" class="btn btn-primary btn-hero fade-in">RSVP NOW</a>
+    </div>
+    
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">Z & L</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#blessing">Blessing</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#details">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#rsvp" class="nav-rsvp">RSVP</a></li>
+    </ul>
+    <button class="nav-mobile-toggle" id="navMobileToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- Quranic Blessing Section -->
+  <section class="section blessing-section" id="blessing">
+    <div class="container">
+      <div class="blessing-card scroll-reveal">
+        <div class="ornament-top">
+          <i class="fas fa-star-and-crescent"></i>
+        </div>
+        <p class="quran-arabic">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ۚ إِنَّ فِي ذَٰلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ"</p>
+        <blockquote class="quran-translation">
+          "And among His Signs is this, that He created for you mates from among yourselves, that ye may dwell in tranquillity with them, and He has put love and mercy between your hearts: verily in that are Signs for those who reflect."
+          <cite>— Surah Ar-Rum (30:21)</cite>
+        </blockquote>
+        <div class="ornament-bottom">
+          <i class="fas fa-star-and-crescent"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="section story" id="story">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="sub-header">Our Journey</span>
+        <h2>How We Met</h2>
+        <div class="divider">
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-img">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">September 14, 2022</span>
+            <h3>A Blessed Beginning</h3>
+            <p>Our paths crossed at a charity event in London. Zayn was setting up tables, and Layla was arranging the decorations. A simple request for assistance led to a conversation about our dreams, families, and values. It was a meeting designed by destiny, filled with mutual respect from the very first moment.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-img">
+            <i class="fas fa-ring"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-date">October 12, 2024</span>
+            <h3>The Proposal & Proposal Acceptance</h3>
+            <p>With the blessings of our families, Zayn formally proposed to Layla during a quiet evening walk in a beautifully lit conservatory. Surrounded by warm lanterns and glowing flowers, we promised to support and guide each other in faith and love for the rest of our days.</p>
+            <div class="timeline-post-img">
+              <img src="assets/lantern.png" alt="Ornate gold Moroccan wedding lantern" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wedding Details Section -->
+  <section class="section details" id="details">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="sub-header">The Celebration</span>
+        <h2>Wedding Events</h2>
+        <div class="divider">
+          <i class="fas fa-mosque"></i>
+        </div>
+      </div>
+      
+      <div class="details-grid">
+        <!-- Card 1: Nikkah -->
+        <div class="details-card scroll-reveal">
+          <div class="card-image-wrap">
+            <img src="assets/nikkah.png" alt="Nikkah Ceremony Venue" loading="lazy">
+            <div class="card-badge">THE NIKKAH</div>
+          </div>
+          <div class="card-body">
+            <h3>Al-Noor Islamic Center</h3>
+            <p class="card-time"><i class="far fa-clock"></i> 3:00 PM - 4:30 PM</p>
+            <p class="card-address"><i class="fas fa-map-marker-alt"></i> Strada di Sant'Apollinare, Siena, Tuscany, Italy</p>
+            <p class="card-text">Join us as we sign our marriage contract (Nikkah) and witness our sacred union before Allah. Modest formal attire is requested. Headscarves will be provided for guests.</p>
+            <div class="card-actions">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-directions"></i> View Map</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Valima -->
+        <div class="details-card scroll-reveal">
+          <div class="card-image-wrap">
+            <img src="assets/valima.png" alt="Valima Banquet Hall" loading="lazy">
+            <div class="card-badge">THE VALIMA</div>
+          </div>
+          <div class="card-body">
+            <h3>Villa di Liliano Grand Hall</h3>
+            <p class="card-time"><i class="far fa-clock"></i> 6:00 PM - 10:00 PM</p>
+            <p class="card-address"><i class="fas fa-map-marker-alt"></i> Via Poggio al Mandorlo, Florence, Tuscany, Italy</p>
+            <p class="card-text">We invite you to share a festive dinner (Valima) to celebrate our marriage. An evening of delicious Halal cuisine, warm conversations, and sweet wishes awaits.</p>
+            <div class="card-actions">
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fas fa-directions"></i> View Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <span class="sub-header">Captured Moments</span>
+        <h2>Photo Gallery</h2>
+        <div class="divider">
+          <i class="fas fa-camera"></i>
+        </div>
+      </div>
+      
+      <div class="gallery-grid scroll-reveal">
+        <div class="gallery-item" data-index="0">
+          <img src="assets/hero.png" alt="Zayn & Layla wedding portrait" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="1">
+          <img src="assets/nikkah.png" alt="Sacred Nikkah ceremony hall with arches" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="2">
+          <img src="assets/valima.png" alt="Beautifully decorated Valima reception hall" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-index="3">
+          <img src="assets/lantern.png" alt="Ornate hanging wedding gold lantern" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP Section -->
+  <section class="section rsvp" id="rsvp">
+    <div class="container">
+      <div class="rsvp-card scroll-reveal">
+        <div class="rsvp-header">
+          <span class="sub-header">Are You Attending?</span>
+          <h2>R.S.V.P</h2>
+          <p>Please respond by September 15, 2026. We look forward to celebrating with you!</p>
+          <div class="divider">
+            <i class="fas fa-envelope-open-text"></i>
+          </div>
+        </div>
+        
+        <form id="rsvpForm" class="rsvp-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="guestName">Full Name</label>
+              <input type="text" id="guestName" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+              <label for="guestEmail">Email Address</label>
+              <input type="email" id="guestEmail" name="email" required placeholder="Enter your email">
+            </div>
+          </div>
+          
+          <div class="form-row radio-group-wrap">
+            <label class="group-label">Will you attend?</label>
+            <div class="radio-options">
+              <label class="radio-label">
+                <input type="radio" name="attendance" value="attending" checked>
+                <span class="radio-custom"></span>
+                Joyfully Accept
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="attendance" value="declined">
+                <span class="radio-custom"></span>
+                Regretfully Decline
+              </label>
+            </div>
+          </div>
+
+          <div class="form-row attendance-details" id="attendanceDetails">
+            <div class="form-group">
+              <label for="guestsCount">Number of Guests</label>
+              <select id="guestsCount" name="guests">
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="dietary">Dietary Preferences</label>
+              <input type="text" id="dietary" name="dietary" placeholder="e.g. Vegetarian, Gluten-free, none">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="wishes">Wishes / Message for the Couple</label>
+            <textarea id="wishes" name="wishes" rows="4" placeholder="Leave a sweet note for the couple..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">Submit Response</button>
+        </form>
+
+        <!-- RSVP Success State -->
+        <div class="rsvp-success" id="rsvpSuccess">
+          <div class="success-icon-wrap">
+            <i class="fas fa-heart-circle-check"></i>
+          </div>
+          <h3>Thank You!</h3>
+          <p id="successMessage">Your response has been saved. We are thrilled to celebrate with you!</p>
+          <button type="button" class="btn btn-secondary btn-reset" id="resetRsvp">Edit Response</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-names">Zayn & Layla</div>
+      <p class="footer-quote">"And We created you in pairs."</p>
+      <p class="footer-verse-ref">Surah An-Naba (78:8)</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Zayn & Layla. Handcrafted with love.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Gallery Container -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Gallery">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous Image">&#10094;</button>
+    <div class="lightbox-content">
+      <img id="lightboxImg" src="" alt="Enlarged view">
+      <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next Image">&#10095;</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
